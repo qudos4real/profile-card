@@ -1,0 +1,57 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: antiquewhite;
+    background-image: url("images/bg-pattern-bottom.svg");
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    width: 60vw;
+    height: 75vh;
+    text-align: center;
+    background-color: white;
+    margin: 7% auto;
+
+}
+
+.upper-card {
+    height: 35%;
+    background-image: url("images/bg-pattern-card.svg");
+    margin: 0%;
+    padding: 0;
+}
+
+.img {
+    border: white 5px solid;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: relative;
+    top: -50px;
+}
+.num {
+font-weight: lighter;
+color: wheat;
+}
+h1{
+    position: relative;
+    top: -50px;
+}
+.text {
+    display: inline-block;
+    width: 100%;
+}
+.text p {
+    width: 10%;
+}
