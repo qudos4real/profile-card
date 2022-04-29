@@ -8,20 +8,98 @@
 }
 
 body {
-    background-color: antiquewhite;
-    background-image: url("images/bg-pattern-bottom.svg");
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("images/bg-pattern-top.svg"),
+        url("images/bg-pattern-bottom.svg");
+    background-position: top, bottom;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-h1, h4 {
+
+h1,
+h4 {
     font-size: 18px;
 }
+.test h4 {
+    color: hsl(229, 23%, 23%);
+}
+.num, .sub-text {
+    color: hsl(227, 10%, 46%);
+}
 
-.card {
-    width: 350px;
-    height: 400px;
-    text-align: center;
+@media only screen and (max-width:768px) {
+    .card {
+        width: 350px;
+        height: 400px;
+        text-align: center;
+        background-color: white;
+        margin: 7% auto;
+        border-radius: 5%;
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -ms-border-radius: 5%;
+        -o-border-radius: 5%;
+    }
+
+    .upper-card {
+        height: 35%;
+        background-image: url("images/bg-pattern-card.svg");
+        margin: 0%;
+        padding: 0;
+        border-radius: 20px 20px 0 0;
+        -webkit-border-radius: 20px 20px 0 0;
+        -moz-border-radius: 20px 20px 0 0;
+        -ms-border-radius: 20px 20px 0 0;
+        -o-border-radius: 20px 20px 0 0;
+    }
+
+    .img {
+        border: white 5px solid;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: relative;
+        top: -50px;
+    }
+
+    .num {
+        font-weight: 400;
+    }
+
+    .card h1,
+    .card p {
+        position: relative;
+        top: -50px;
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+        margin: auto;
+        position: relative;
+        top: -35px;
+    }
+
+    .sub-text {
+        font-size: small;
+        font-weight: 400;
+    }
+
+    hr {
+        position: relative;
+        top: -35px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .card {
+        width: 350px;
+        height: 400px;
+        text-align: center;
     background-color: white;
     margin: 7% auto;
     border-radius: 5%;
@@ -31,49 +109,56 @@ h1, h4 {
     -o-border-radius: 5%;
 }
 
-.upper-card {
-    height: 35%;
-    background-image: url("images/bg-pattern-card.svg");
-    margin: 0%;
-    padding: 0;
-    border-radius: 20px 20px 0 0;
-    -webkit-border-radius: 20px 20px 0 0;
-    -moz-border-radius: 20px 20px 0 0;
-    -ms-border-radius: 20px 20px 0 0;
-    -o-border-radius: 20px 20px 0 0;
-}
+    .upper-card {
+        height: 35%;
+        background-image: url("images/bg-pattern-card.svg");
+        margin: 0%;
+        padding: 0;
+        border-radius: 20px 20px 0 0;
+        -webkit-border-radius: 20px 20px 0 0;
+        -moz-border-radius: 20px 20px 0 0;
+        -ms-border-radius: 20px 20px 0 0;
+        -o-border-radius: 20px 20px 0 0;
+    }
 
-.img {
-    border: white 5px solid;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    position: relative;
-    top: -50px;
-}
-.num {
-font-weight: 400;
-color: wheat;
-}
-.card h1, .card p {
-    position: relative;
-    top: -50px;
-}
-.text {
-    display: flex;
-    justify-content: space-around;
-    width: 300px;
-    margin: auto;
-    position: relative;
-    top: -35px;
-}
-.sub-text {
-    font-size: small;
-    font-weight: 400;
-}
-hr{
-    position: relative;
-    top: -35px;
+    .img {
+        border: white 5px solid;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        position: relative;
+        top: -50px;
+    }
+
+    .num {
+        font-weight: 400;
+    }
+
+    .card h1,
+    .card p {
+        position: relative;
+        top: -50px;
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-around;
+        width: 300px;
+        margin: auto;
+        position: relative;
+        top: -35px;
+    }
+
+    .sub-text {
+        font-size: small;
+        font-weight: 400;
+    }
+
+    hr {
+        position: relative;
+        top: -35px;
+    }
+
 }
